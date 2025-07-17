@@ -1,0 +1,22 @@
+nohup: ignoring input
+ * Serving Flask app 'src.main'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://169.254.0.21:5001
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [06/Jul/2025 07:44:15] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "GET /assets/index-DjaM9cCx.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "GET /assets/index-DeuuXxQj.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "[36mGET /assets/index-DeuuXxQj.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:44:23] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Jul/2025 07:45:39] "[35m[1mPOST /api/auth/register/owner HTTP/1.1[0m" 201 -
+127.0.0.1 - - [06/Jul/2025 07:46:21] "[35m[1mPOST /api/auth/login/owner HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Jul/2025 07:47:49] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jul/2025 07:47:49] "[36mGET /assets/index-DjaM9cCx.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Jul/2025 07:47:49] "[36mGET /assets/index-DeuuXxQj.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Jul/2025 07:47:49] "[36mGET /assets/index-DeuuXxQj.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Jul/2025 07:48:31] "[35m[1mPOST /api/auth/login/owner HTTP/1.1[0m" 500 -
