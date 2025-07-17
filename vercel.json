@@ -15,8 +15,8 @@
       "src": "/api/(.*)",
       "dest": "api/index.py"
     }
-  ]
+  ],
   "env": {
-    "PYTHONPATH": ".",
+    "PYTHONPATH": "."
   }
 }
