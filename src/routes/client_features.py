@@ -168,7 +168,6 @@ def gemini_ai():
     try:
         data = request.get_json()
         user_input = data.get('user_input', '')
-# <!-- //AIzaSyAIcBOb3fKdkLBPBPISNFMwHKfNuww_rqE -->
         # TODO: Integrate with Gemini AI API here
         # For now, mock the response
         processed_response = f"Gemini AI processed response based on input:\n{user_input}\n\n[This is a mocked response.]"
