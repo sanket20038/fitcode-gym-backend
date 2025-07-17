@@ -1,6 +1,9 @@
 # api/index.py
 
-from src.main import app as flask_app
+# from src.main import app as flask_app
+# api/index.py
+from src.main import app as application
+
 
 def handler(request, context):
     # Convert the incoming request to WSGI environment
