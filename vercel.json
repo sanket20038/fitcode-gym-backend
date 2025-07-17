@@ -1,22 +1,30 @@
 {
   "version": 2,
+  "name": "fitcode-gym-platform-frontend",
   "builds": [
     {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "api/index.py"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "env": {
-    "PYTHONPATH": "."
-  }
+    "NODE_ENV": "production"
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite"
 }
