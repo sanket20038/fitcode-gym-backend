@@ -141,19 +141,13 @@ def get_qr_image(current_user, machine_id):
         # Prepare font
         try:
             font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-            font = ImageFont.truetype(font_path, 40)
+            font = ImageFont.truetype(font_path, 24)
         except Exception:
             font = ImageFont.load_default()
         
-        # Draw gym name and machine name at top with bigger font, no shadow
-        gym_name = gym.name or ""
-        machine_name = machine.name or ""
-        combined_text = f"{gym_name} - {machine_name}"
-        text_w, text_h = draw.textsize(combined_text, font=font)
-        x = (img_w - text_w) // 2
-        y = 20
-        # No shadow, just text
-        draw.text((x, y), combined_text, font=font, fill="#1E40AF")
+        # Remove gym name and machine name text from QR code image to avoid overlap issues
+        # So no text is drawn on the QR code image
+        pass
         
         # Add decorative border
         border_color = "#1E40AF"
